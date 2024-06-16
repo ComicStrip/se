@@ -49,16 +49,33 @@
         <button class="last">&gt;|</button>
     </div>
     <div class="content active" id="page1">some old comic strip from CSB, testing only
-        <img src="https://singularity.express/images/2017-04-14-01.jpg" alt="Example Image" style="width: 80%;">
+        <img id="comicstrip" src="https://singularity.express/images/2017-04-14-01.jpg" alt="Example Image" style="width: 80%;">
     </div>
     <div class="navigation">
-        <button class="first">|&lt;</button>
-        <button class="prev">&lt; Prev</button>
-        <button class="random">Random</button>
-        <button class="next">Next &gt;</button>
-        <button class="last">&gt;|</button>
+        <button class="first2">|&lt;</button>
+        <button class="prev2">&lt; Prev</button>
+        <button class="random2">Random</button>
+        <button class="next2">Next &gt;</button>
+        <button class="last2">&gt;|</button>
     </div>
   <br><br>
-  page variant 11
+  page variant 14
+
+    <script>
+         function showOther() {
+             console.log("in showOther() on "+Date());
+         }
+
+        document.getElementById('first').addEventListener('click', () => showOther());
+        document.getElementById('first2').addEventListener('click', () => showOther());
+        document.getElementById('prev').addEventListener('click', () => showOther());
+        document.getElementById('prev2').addEventListener('click', () => showOther());
+        document.getElementById('random').addEventListener('click', () => showOther());
+        document.getElementById('random2').addEventListener('click', () => showOther());
+        document.getElementById('next').addEventListener('click', () => showOther());
+        document.getElementById('next2').addEventListener('click', () => showOther());
+        document.getElementById('last').addEventListener('click', () => showOther());
+        document.getElementById('last2').addEventListener('click', () => showOther());
+    </script>
 </body>
 </html>

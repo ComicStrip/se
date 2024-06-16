@@ -1,7 +1,33 @@
 <!DOCTYPE html>
-<html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>singularity express comic strip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .navigation {
+            margin: 20px 0;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2K7XXMLTZX"></script>
@@ -14,6 +40,13 @@
 </script>
 <body>
 <H3>singularity express comic strip</H3>
+    <div class="navigation">
+        <button id="first">|&lt;</button>
+        <button id="prev">&lt; Prev</button>
+        <button id="random">Random</button>
+        <button id="next">Next &gt;</button>
+        <button id="last">&gt;|</button>
+    </div>
 new comic strip from CSB coming here, stay tuned or refresh this page from time to time
   <br><br>
     <img src="https://singularity.express/images/2019-05-12-01.png" alt="Example Image" style="width: 50%;">

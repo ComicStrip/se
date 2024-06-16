@@ -59,17 +59,25 @@
         <button id="last2">&gt;|</button>
     </div>
   <br><br>
-  page variant 16
+  page variant 18
+
 
     <script>
+        const urls = [
+            "https://singularity.express/images/2017-04-14-01.jpg",
+            "https://singularity.express/images/2017-04-15-01.jpg"
+        ];
+        let currentIndex = 0;
+        
         function changeImageSrc(newSrc) {
             document.getElementById('comicstrip').src = newSrc;
         }
         
-         function showOther() {
-             console.log("in showOther() on "+Date());
-             changeImageSrc("https://singularity.express/images/2017-04-15-01.jpg");
-         }
+        function showOther() {
+            console.log("in showOther() on " + Date());
+            currentIndex = (currentIndex + 1) % urls.length;
+            changeImageSrc(urls[currentIndex]);
+        }
 
         document.getElementById('first').addEventListener('click', () => showOther());
         document.getElementById('first2').addEventListener('click', () => showOther());

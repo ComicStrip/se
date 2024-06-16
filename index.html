@@ -59,11 +59,16 @@
         <button id="last2">&gt;|</button>
     </div>
   <br><br>
-  page variant 14
+  page variant 15
 
     <script>
+        function changeImageSrc(newSrc) {
+            document.getElementById('comicstrip').src = newSrc;
+        }
+        
          function showOther() {
              console.log("in showOther() on "+Date());
+             changeImageSrc("https://singularity.express/images/2017-04-15-01.jpg");
          }
 
         document.getElementById('first').addEventListener('click', () => showOther());
